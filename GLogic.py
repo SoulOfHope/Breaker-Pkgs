@@ -2,6 +2,19 @@
 
 # AND GATE
 
+@_('INPUT AND INPUT')
+def statement(self, t):
+  if t.INPUT1 == True:
+    if t.INPUT2 == True:
+      blockPrint()
+      return '1'
+    else:
+      blockPrint()
+      return '0'
+  else:
+    blockPrint()
+    return '0'
+
 # OR GATE
 
 # NOR GATE
